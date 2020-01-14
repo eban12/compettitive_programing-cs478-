@@ -3,8 +3,13 @@ def gcd(a, b):
         return a
     else:
         return gcd(b, a % b)
+<<<<<<< HEAD
 
 
+=======
+ 
+ 
+>>>>>>> master
 def solve(n):
     a = 0
     b = 0
