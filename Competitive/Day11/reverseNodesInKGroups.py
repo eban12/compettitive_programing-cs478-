@@ -4,6 +4,9 @@
 #         self.val = x
 #         self.next = None
 
+
+# for swap nodes in pairs just make the k = 2
+
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
         if k == 1:
