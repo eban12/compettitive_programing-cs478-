@@ -1,12 +1,11 @@
 class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
-        # self.candidates = 
+       
         self.k = k
-        self.buildHeap(nums)
-        self.heapSort(nums)
-        
         if len(nums) >= k:
+            self.buildHeap(nums)
+            self.heapSort(nums)
             self.candidates = nums[:k]
         else:
             self.candidates = nums
@@ -21,8 +20,6 @@ class KthLargest:
             self.candidates[0] = val
         
         self.percolateDown(self.candidates, 0, len(self.candidates) - 1)
-        # self.buildHeap(self.candidates)
-        
         return self.candidates[0]
         
     def percolateDown(self, lst, start, end):
